@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 9</title>
+</head>
+<body class="bg-info-subtle">
+    
+    <div class="container  "> 
+        <div class="row ">
+            <div class="main text-center">
+                <h1 class=" py-3 my-5">Bookmarker</h1>
+                <h2 class="py-3 my-3"> 
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites 
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+
+            <div class="input  mx-auto my-5">
+
+                <label for="siteNameInput" > <i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" name="" id="siteNameInput" class="form-control mb-4 " placeholder="Bookmark Name">
+
+                <label for="siteUrlInput" > <i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="text" name="" id="siteUrlInput" class="form-control mb-4" placeholder="Website URL">
+                <div class="mx-auto text-center">
+                    <button id="addBtn" disabled class=" btn btn-danger px-5 " onclick="visitSite()"> Submit</button>
+                </div>
+                
+            </div>
+            <div>
+                <table class="table table-striped mx-auto text-center">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableSite">
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
